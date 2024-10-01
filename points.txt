@@ -1,0 +1,35 @@
+Always remember git is not a language specifier
+to know the whether git is installed or  not we enter just (git)
+to know the version of the git we are using we enter (git --version)
+when we create git, a working directory is created by using the command (init -b main)
+to delete a created command we will not have acces to delete in terminal so we have to go the exploler and it will be hidden and we have to enter shift delete to delete it.
+to know the status of a directory we enter the command (git status).
+Always remember we have to create a main directory rather than a branch. To know whether we have created a main directory or not after creating we will get(on branch main)
+Once we have done creating a project like in our case (learn git),we add files as usual by a right click
+Dont forget to save the files once u have done with it
+once we have completeed the changes in  our code in a working directory, we use (git add filename) in our case it is FirstCode.txt using this command doesnt add this file to the staging area.It adds to the staging environment.
+To remove from staging environment use command(git rm --cached <filename>) to unstage the file
+A main has branches right.But main itself is a branch
+by using the command (git log) we can see all the initial commits,author,changes made time,etc..
+Every time we commit we have to pass a message.Because we have to let them know that the changes we have made.Without passing messages a file doesnt commit
+We do not use double quotes for file name while adding and removing
+A message is passed by using the command (git commit -m <"Message">)
+Git has something called integrity so everytime we change it changes the checksum(A 7 alphanumeric value obtained in terminal )
+eg:6Ayk5p8
+It is created buy SHA-1(verifies data integrity when input is given) actually it creates 40 charecters out of which first 7 are visible here
+If you want to see all 40 alp[hanumeric values just enter the command (git log)]
+After comiting if u make any changes and check the git status u will see a warning as (modified:<filename>)
+So every time we make changes add that to the staging area and then commit
+To commit directly without adding the file to the staging area, we can enter the following command(git commit -a -m <"Message">)
+When we enter git status we can only that the file is modified.But to know what exactly is modifies we have a comnmand for it(git diff)
+If we want to know the changes we made in working directory we use (git diff).But when we add that file into a staging area the there is other command(git diff --staged)
+Key words like A(added to the staging area),U(untracked files[Git has nothing to do with those files]),M(Modified and not added to the staging area)
+To add all the files in our project to the staging area just enter this command(git add .)
+consider there are bunch of files which u already added them to the staging area.Now u dont want to push a particular file to the repository.Instead u want to remove that file.Then enter the command to delete that particular file(git rm --cached <filename>).Now the file will be untracked by the git and then delete the file by right click on it.
+After doing the above process we must also commit by passing a message like(git commit -m <"message(removed)">)
+When u want to copy the repository from github https link and paste it in your command prompt enter this command(git clone <repo address>)
+"To view hidden folders in a directory in powershell terminal we can use the following command( file path <Get-ChildItem -Force>)"
+Sometimes when git log command is used we cant enter any command in terminal then enter (q and press enter) q(quit)
+
+
+When we have to work with someone in git, there is something called as remote repository
