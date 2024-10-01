@@ -30,6 +30,6 @@ After doing the above process we must also commit by passing a message like(git 
 When u want to copy the repository from github https link and paste it in your command prompt enter this command(git clone <repo address>)
 "To view hidden folders in a directory in powershell terminal we can use the following command( file path <Get-ChildItem -Force>)"
 Sometimes when git log command is used we cant enter any command in terminal then enter (q and press enter) q(quit)
-
-
 When we have to work with someone in git, there is something called as remote repository
+Finally if we have to push the code to the gitHub repo then use the command(git push origin main)
+That's it once visit the repo and refresh the page we will see our siles there 
