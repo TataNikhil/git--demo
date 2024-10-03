@@ -1,17 +1,17 @@
 Always remember git is not a language specifier
-to know the whether git is installed or  not we enter just (git)
-to know the version of the git we are using we enter (git --version)
+To know the whether git is installed or  not we just enter (git)
+To know the version of the git we are using we enter (git --version)
 when we create git, a working directory is created by using the command (init -b main)
-to delete a created command we will not have acces to delete in terminal so we have to go the exploler and it will be hidden and we have to enter shift delete to delete it.
+to delete a created command we will not have access to delete in terminal so we have to go the exploler and it will be hidden and we have to enter shift delete to delete it.
 to know the status of a directory we enter the command (git status).
 Always remember we have to create a main directory rather than a branch. To know whether we have created a main directory or not after creating we will get(on branch main)
 Once we have done creating a project like in our case (learn git),we add files as usual by a right click
 Dont forget to save the files once u have done with it
-once we have completeed the changes in  our code in a working directory, we use (git add filename) in our case it is FirstCode.txt using this command doesnt add this file to the staging area.It adds to the staging environment.
+once we have completed the changes in  our code in a working directory, we use (git add <filename>) in our case it is FirstCode.txt using this command doesn't add this file to the staging area.It adds to the staging environment.
 To remove from staging environment use command(git rm --cached <filename>) to unstage the file
 A main has branches right.But main itself is a branch
-by using the command (git log) we can see all the initial commits,author,changes made time,etc..
-Every time we commit we have to pass a message.Because we have to let them know that the changes we have made.Without passing messages a file doesnt commit
+By using the command (git log) we can see all the initial commits,author,changes made time,history of commits.
+Every time we commit we have to pass a message.Because we have to let them know that the changes we have made.Without passing messages a file doesn't commit.
 We do not use double quotes for file name while adding and removing
 A message is passed by using the command (git commit -m <"Message">)
 Git has something called integrity so everytime we change it changes the checksum(A 7 alphanumeric value obtained in terminal )
@@ -30,6 +30,24 @@ After doing the above process we must also commit by passing a message like(git 
 When u want to copy the repository from github https link and paste it in your command prompt enter this command(git clone <repo address>)
 "To view hidden folders in a directory in powershell terminal we can use the following command( file path <Get-ChildItem -Force>)"
 Sometimes when git log command is used we cant enter any command in terminal then enter (q and press enter) q(quit)
-When we have to work with someone in git, there is something called as remote repository
-Finally if we have to push the code to the gitHub repo then use the command(git push origin main)
+The repository we see in github called as remote repository
+The repository we make changes in our system is called as local repository.
+Finally if we have to push the code to the gitHub repo then use the command(git push origin main)[main:branch]
 That's it once visit the repo and refresh the page we will see our siles there 
+After commiting numerous times when we finally decided to make our repo available to the user then we give a version number to the repo by using the command(git tag -a v1.0 -m "1st version") 
+To give version we use the keyword tag.
+Tafgs are of two types(annotated tagging and Lightweight tagging) In the above command we have used the annotated tagging
+To check our tagging we use the command (git tag)
+To see the description of our tag we use the command(git show <version>)
+When we push code tags donot automatically update. We need to push tags separately.
+To push tags we have a special command(git push origin <version>)
+The benifit of creating tags is we can jump from one version to the other easily in github
+Sometimes our default branch will be master.To change it to main use the following command(git config --global init.defaultBranch main)
+To create a branch use the following command(git checkout -b <branchName>)[b:branch]
+We canalso create a new brranch with this command(git switch -c <branchName>)[c:create]
+To shift from one branch to the other u can use the following command(git checkout <new branch>)
+TO go back to the previous branch enter the command(git switch -)
+To delete a branch just enter the command(git branch -d <branchName>)[d:delete]
+To check the branches we have enter the command (git branch)
+The branch which have star and in green colour is the branch that we are making changes in.
+
