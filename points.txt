@@ -50,4 +50,12 @@ TO go back to the previous branch enter the command(git switch -)
 To delete a branch just enter the command(git branch -d <branchName>)[d:delete]
 To check the branches we have enter the command (git branch)
 The branch which have star and in green colour is the branch that we are making changes in.
+To shift our current position to the required branch: git checkout <commit id>/<branch name>
+Consider develop as a parent branch of sai if u checkout develop and merge with sai, all the changes made by sai will be merged into develop but not the changes in develop merge into sai because checkout is at develop position.
+Head is the position where u r currently at.
+You should always point ur head at the branch name instead on the commit.
+TO get from staaged state to working directory we use command: restore --staged
+To get get back from local repo to staged area we use command: reset HEAD~<1/2/3> based on the number of commits we have to come back
+o get from online repo(GITHUB) to local repo we use pull
+
 
